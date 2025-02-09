@@ -19,6 +19,16 @@ const barbearia = {
   
   
 function buscaCortePorId(id) {
+      const lista = barbearia.cortes
+
+    for (let i = 0; i < lista.length; i++) {
+        let corte = lista[i]
+        if (corte.id === id) {
+            return corte
+        }
+    }
+
+    return "Corte não encontrado"
 }
 
 function buscaBarbaPorId(id) {
